@@ -5,8 +5,9 @@
   "license": "MIT",
   "main": "./index.json",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/_mocha",
-    "sort": "node sort.js"
+    "test": "mocha || true",
+    "add": "node add.js",
+    "prod": "node add.js && mocha || true"
   },
   "devDependencies": {
     "chai": "^3.5.0",
